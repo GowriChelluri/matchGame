@@ -1,0 +1,25 @@
+.bottom-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  min-height: 100vh;
+  background-size: cover;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-image {
+  height: 500px;
+  width: 600px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.tabs-container {
+  display: flex;
+}
+.list-items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}

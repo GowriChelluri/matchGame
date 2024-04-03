@@ -1,0 +1,29 @@
+.website-logo {
+  height: 40px;
+  width: 120px;
+  margin-left: 20px;
+}
+.navbar-container {
+  background-color: #2c0e3a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.score-time-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 60px;
+}
+.score {
+  font-size: 15px;
+  margin-right: 20px;
+}
+.clock {
+  height: 20px;
+  width: 20px;
+}
+.time {
+  font-size: 15px;
+}
