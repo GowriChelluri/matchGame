@@ -1,11 +1,16 @@
 import './index.css'
 
 const MatchGameItem = props => {
-  const {matchGameDetails} = props
-  const {imageUrl} = matchGameDetails
+  const {matchGameDetails, getImageUrl} = props
+  const {imageUrl, id, displayText} = matchGameDetails
+  const onClickImage = () => {
+    getImageUrl(id)
+  }
   return (
     <li>
-      <img src={imageUrl} alt="itemImage" className="image" />
+      <button type="button" onClick={onClickImage} className="image-btn">
+        <img src={imageUrl} alt={displayText} className="image" />
+      </button>
     </li>
   )
 }

@@ -1,10 +1,14 @@
 import './index.css'
 
 const TabItem = props => {
-  const {tabDetails} = props
-  const {displayText} = tabDetails
+  const {tabDetails, clickTab} = props
+  const {displayText, tabId} = tabDetails
+
+  const onClickTabItem = () => {
+    clickTab(tabId)
+  }
   return (
-    <button type="button" className="tab-button">
+    <button type="button" className="tab-button" onClick={onClickTabItem}>
       {displayText}
     </button>
   )
